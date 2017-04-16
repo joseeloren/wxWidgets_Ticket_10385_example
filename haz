@@ -1,1 +1,1 @@
-g++ main.cpp `/home/jlorenzo/wxWidgets/gtk-build/wx-config --cxxflags --libs` -o dialog
+g++ main.cpp `wx-config --cxxflags --libs` -o dialog
