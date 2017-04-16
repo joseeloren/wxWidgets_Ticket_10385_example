@@ -46,10 +46,9 @@ MyModalDialog::MyModalDialog( wxWindow* parent )
 void MyModalDialog::OnInit(wxInitDialogEvent& WXUNUSED(event))
 {
 	printf("On Init\n");
-	EndModal(wxID_OK);
 	if ( !IsModal() )
     wxMessageBox(_T("not modal"));
-  
+	EndModal(wxID_OK);  
 }
 
 MyFrame::MyFrame() : wxFrame(NULL, wxID_ANY, wxT("Prueba"), wxDefaultPosition, wxSize(200,150))
