@@ -66,7 +66,7 @@ MyFrame::MyFrame() : wxFrame(NULL, wxID_ANY, wxT("Prueba"), wxDefaultPosition, w
 
 void MyFrame::OnClick(wxCommandEvent& WXUNUSED(event))
 {
-    MyModalDialog d;
+    MyModalDialog d(this);
 
     int a = d.ShowModal();  
 }
